@@ -15,4 +15,4 @@ jobs:
           pip install pytest
           pip install -e .
       - name: Run tests
-        run: python -m pytest tests/
+        run: pytest tests/
