@@ -14,5 +14,7 @@ jobs:
         run: |
           pip install pytest
           pip install -e .
+      - name: Set PYTHONPATH
+        run: echo "PYTHONPATH=${{ github.workspace }}" >> $GITHUB_ENV
       - name: Run tests
         run: pytest tests/
